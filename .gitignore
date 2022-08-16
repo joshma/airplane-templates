@@ -1,0 +1,5 @@
+node_modules
+vendor
+
+# snyk
+.dccache
