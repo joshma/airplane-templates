@@ -1,4 +1,4 @@
-# Next steps for Getting started template
+Next steps for Getting started template
 
 Navigate to the `getting_started` directory:
 `cd getting_started`
