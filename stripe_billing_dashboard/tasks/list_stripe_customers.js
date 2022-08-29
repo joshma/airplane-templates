@@ -1,6 +1,6 @@
-// TODO: this is a test API key
-// TODO: replace this with a secret config
-const stripe = require('stripe')('sk_test_51J0r7gIbKlxhc230E8jgMy0nXu51u1FeBoBYoYmWEdbhyOo61gXHyek1d66xka180YxsQ2J7YmZ54UTN4cWo6V5N00Tn2JALSU');
+// TODO: Set your secret key here. This is a test Stripe API key.
+// See your Stripe API keys here: https://dashboard.stripe.com/apikeys
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 export default async function(params) {
   const customers = await stripe.customers.search({

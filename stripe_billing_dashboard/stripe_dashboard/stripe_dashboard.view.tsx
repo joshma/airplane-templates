@@ -1,6 +1,6 @@
 import { Column, Stack, Table, Text, Title, TextInput, useComponentState } from "@airplane/views";
 
-const ExampleView = () => {
+const Dashboard = () => {
   const searchKeyword = useComponentState("searchKeyword");
   const stripeCustomers = useComponentState("stripeCustomers");
   const selectedCustomer = stripeCustomers.selectedRow;
@@ -29,7 +29,6 @@ const ExampleView = () => {
             id="customerCharges"
             title="Charges for This Customer"
             task={{ slug: "lookup_charges_for_stripe_customer", params: { customer_id: selectedCustomer.id } }}
-            // hiddenColumns={["currency"]}
             columns={[
               {
                 label: "Charge Date",
@@ -56,4 +55,4 @@ const ExampleView = () => {
   );
 };
 
-export default ExampleView;
+export default Dashboard;

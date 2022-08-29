@@ -2,14 +2,8 @@
 
 # Used by Airplane to identify your task. Do not change.
 slug: lookup_stripe_customer
-
-# A human-readable name for your task.
 name: Lookup Stripe Customer
-
-# A human-readable description for your task.
-# description: "My Airplane task"
-
-# A list of inputs to your task.
+description: "Looks up Stripe metadata for a given customer."
 parameters:
 -
   slug: customer_id
@@ -17,8 +11,6 @@ parameters:
   type: shorttext
   description: The Stripe ID for this customer
   required: false
-
-# Configuration for a Node task.
 node:
   entrypoint: lookup_stripe_customer.js
-  nodeVersion: "16"
+  nodeVersion: "18"

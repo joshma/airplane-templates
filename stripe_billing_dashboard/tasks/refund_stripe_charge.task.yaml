@@ -2,14 +2,8 @@
 
 # Used by Airplane to identify your task. Do not change.
 slug: refund_stripe_charge
-
-# A human-readable name for your task.
 name: Refund Stripe Charge
-
-# A human-readable description for your task.
-# description: "My Airplane task"
-
-# A list of inputs to your task.
+description: "Refunds a charge in Stripe."
 parameters:
 -
   slug: charge_id
@@ -17,8 +11,6 @@ parameters:
   type: shorttext
   description: The Stripe ID for the charge to refund
   required: false
-
-# Configuration for a Node task.
 node:
   entrypoint: refund_stripe_charge.js
-  nodeVersion: "16"
+  nodeVersion: "18"
