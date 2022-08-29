@@ -3,3 +3,5 @@ vendor
 
 # snyk
 .dccache
+
+.DS_Store
