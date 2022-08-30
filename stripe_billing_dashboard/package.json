@@ -1,5 +1,5 @@
 {
-  "name": "stripedashboard",
+  "name": "stripe_dashboard",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
