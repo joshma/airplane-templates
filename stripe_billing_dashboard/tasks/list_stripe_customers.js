@@ -1,6 +1,7 @@
+import Stripe from "stripe";
 // TODO: Set your secret key here. This is a test Stripe API key.
 // See your Stripe API keys here: https://dashboard.stripe.com/apikeys
-const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+const stripe = Stripe('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 export default async function(params) {
   const customers = await stripe.customers.search({
