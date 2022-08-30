@@ -10,13 +10,15 @@ const Dashboard = () => {
       <Title>Stripe Billing Dashboard</Title>
       <Text>Lookup customers by their name or email, view all charges for that customer, and refund a charge if needed.</Text>
       <TextInput id="searchKeyword" label="Search for a customer" />
-      <Table
-        id="stripeCustomers"
-        title="Stripe Customers" 
-        task={{ slug: "list_stripe_customers", params: { search_keyword: searchKeyword.value } }}
-        rowSelection="single"
-        showFilter={false}
-      />
+      {searchKeyword.value.length > 0 &&
+        <Table
+          id="stripeCustomers"
+          title="Stripe Customers"
+          task={{ slug: "list_stripe_customers", params: { search_keyword: searchKeyword.value } }}
+          rowSelection="single"
+          showFilter={false}
+        />
+      }
       {selectedCustomer &&
         <Stack>
           <Table 
