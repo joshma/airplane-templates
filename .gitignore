@@ -3,3 +3,10 @@ vendor
 
 # snyk
 .dccache
+
+.DS_Store
+
+yarn.lock
+package-lock.json
+.airplane-view
+
