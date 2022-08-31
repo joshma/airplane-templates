@@ -14,3 +14,9 @@ parameters:
 node:
   entrypoint: lookup_stripe_customer.js
   nodeVersion: "18"
+  # Uncomment if you want to use your own Stripe API key from a config variable
+  # Get your Stripe API keys here: https://stripe.com/docs/keys#obtain-api-keys
+  # How to use config variables in Airplane: https://docs.airplane.dev/platform/configs
+  # envVars:
+  #   STRIPE_SECRET_KEY:
+  #     config: STRIPE_SECRET_KEY

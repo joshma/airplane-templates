@@ -7,7 +7,7 @@ const Dashboard = () => {
 
   return (
     <Stack>
-      <Title>Stripe Billing Dashboard</Title>
+      <Title>Stripe billing dashboard</Title>
       <Text>Lookup customers by their name or email, view all charges for that customer, and refund a charge if needed.</Text>
       <TextInput id="searchKeyword" label="Search for a customer" />
       {searchKeyword.value &&

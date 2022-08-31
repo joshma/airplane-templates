@@ -1,7 +1,8 @@
 import Stripe from "stripe";
-// TODO: Set your secret key here. This is a test Stripe API key.
-// See your Stripe API keys here: https://dashboard.stripe.com/apikeys
-const stripe = Stripe('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+// Remove the test Stripe API key below and replace with your own from a config variable
+// How to use config variables in Airplane: https://docs.airplane.dev/platform/configs
+const stripeAPIKey = process.env.STRIPE_SECRET_KEY ?? 'sk_test_4eC39HqLyjWDarjtT1zdp7dc';
+const stripe = Stripe(stripeAPIKey);
 
 export default async function(params) {
   const charges = await stripe.charges.search({
