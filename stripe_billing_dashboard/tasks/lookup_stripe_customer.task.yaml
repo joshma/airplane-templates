@@ -12,7 +12,7 @@ parameters:
   description: The Stripe ID for this customer
   required: false
 node:
-  entrypoint: lookup_stripe_customer.js
+  entrypoint: lookup_stripe_customer.ts
   nodeVersion: "18"
   # Uncomment if you want to use your own Stripe API key from a config variable
   # Get your Stripe API keys here: https://stripe.com/docs/keys#obtain-api-keys

@@ -12,7 +12,7 @@ parameters:
   description: The search string
   required: false
 node:
-  entrypoint: list_stripe_customers.js
+  entrypoint: list_stripe_customers.ts
   nodeVersion: "18"
   # Uncomment if you want to use your own Stripe API key from a config variable
   # Get your Stripe API keys here: https://stripe.com/docs/keys#obtain-api-keys
