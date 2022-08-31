@@ -1,7 +1,7 @@
 # Full reference: https://docs.airplane.dev/tasks/task-definition
 
 # Used by Airplane to identify your task. Do not change.
-slug: list_stripe_customers
+slug: demo_list_stripe_customers
 name: List Stripe Customers
 description: "Calls Stripe API and fetches all customers whose email matches the search keyword."
 parameters:

@@ -1,7 +1,7 @@
 # Full reference: https://docs.airplane.dev/tasks/task-definition
 
 # Used by Airplane to identify your task. Do not change.
-slug: lookup_stripe_customer
+slug: demo_lookup_stripe_customer
 name: Lookup Stripe Customer
 description: "Looks up Stripe metadata for a given customer."
 parameters:

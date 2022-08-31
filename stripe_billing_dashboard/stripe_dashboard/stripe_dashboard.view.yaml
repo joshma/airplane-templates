@@ -1,5 +1,5 @@
 # Used by Airplane to identify your view. Do not change.
-slug: stripe_dashboard
+slug: demo_stripe_dashboard
 name: Stripe Dashboard
 description: "Stripe billing dashboard for looking up customers and refunding charges."
 

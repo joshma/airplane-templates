@@ -14,7 +14,7 @@ const Dashboard = () => {
         <Table
           id="stripeCustomers"
           title="Search Results"
-          task={{ slug: "list_stripe_customers", params: { search_keyword: searchKeyword.value } }}
+          task={{ slug: "demo_list_stripe_customers", params: { search_keyword: searchKeyword.value } }}
           rowSelection="single"
           showFilter={false}
           hiddenColumns={["id"]}
@@ -35,7 +35,7 @@ const Dashboard = () => {
           <Table
             id="customerDetails"
             title="Customer Details"
-            task={{ slug: "lookup_stripe_customer", params: { customer_id: selectedCustomer.id } }}
+            task={{ slug: "demo_lookup_stripe_customer", params: { customer_id: selectedCustomer.id } }}
             showFilter={false}
             columns={[
               {
@@ -64,7 +64,7 @@ const Dashboard = () => {
           <Table 
             id="customerCharges"
             title="Charges for This Customer"
-            task={{ slug: "lookup_charges_for_stripe_customer", params: { customer_id: selectedCustomer.id } }}
+            task={{ slug: "demo_lookup_charges_for_stripe_customer", params: { customer_id: selectedCustomer.id } }}
             hiddenColumns={["currency", "description"]}
             columns={[
               {
@@ -98,7 +98,7 @@ const Dashboard = () => {
             ]}
             rowActions={[
               {
-                slug: "refund_stripe_charge",
+                slug: "demo_refund_stripe_charge",
                 label: "Refund",
                 rowTransform: (r) => ({charge_id: r.id})
               }

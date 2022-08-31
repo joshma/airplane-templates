@@ -1,7 +1,7 @@
 # Full reference: https://docs.airplane.dev/tasks/task-definition
 
 # Used by Airplane to identify your task. Do not change.
-slug: lookup_charges_for_stripe_customer
+slug: demo_lookup_charges_for_stripe_customer
 name: Lookup Charges for Stripe Customer
 description: "Looks up all historical Stripe charges for a customer given their ID"
 parameters:
