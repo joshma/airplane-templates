@@ -79,7 +79,7 @@ schedules:
     name: Daily database check
     description: Runs a database check every day at midnight UTC
     paramValues:
-      slack_channel: test-noise
+      slack_channel: INSERT_SLACK_CHANNEL_HERE
 
 resources:
-  - demo_db
+  db: demo_db

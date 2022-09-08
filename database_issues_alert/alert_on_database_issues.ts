@@ -7,7 +7,7 @@ type Params = {
 // Put the main logic of the task in this function.
 export default async function(params: Params) {
   const wraparoundThresholdPercent = 60;
-  const transactionIDWraparound = await airplane.sql.query("demo_db", `
+  const transactionIDWraparound = await airplane.sql.query("db", `
     WITH max_age AS (
         SELECT 2000000000 as max_old_xid
             , setting AS autovacuum_freeze_max_age
