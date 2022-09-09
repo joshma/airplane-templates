@@ -1,10 +1,9 @@
 import airplane from "airplane";
 
 type Params = {
-  slack_channel: string;
+  slack_channel?: string;
 };
 
-// Put the main logic of the task in this function.
 export default async function(params: Params) {
   const wraparoundThresholdPercent = 60;
   const transactionIDWraparound = await airplane.sql.query("db", `
@@ -28,7 +27,12 @@ export default async function(params: Params) {
   `);
   const percentTowardsWraparound = transactionIDWraparound.output.Q1.percent_towards_wraparound;
   if (percentTowardsWraparound > wraparoundThresholdPercent) {
-    await airplane.slack.message(params.slack_channel, `Warning: we are ${percentTowardsWraparound}% on the way to transaction ID wraparound!`)
+    const warningMessage = `Warning: we are ${percentTowardsWraparound}% on the way to transaction ID wraparound!`;
+    if (params.slack_channel != null) {
+      await airplane.slack.message(params.slack_channel, warningMessage)
+    } else {
+      console.log(warningMessage);
+    }
   }
 
   return {
