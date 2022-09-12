@@ -1,9 +1,0 @@
-# Full reference: https://docs.airplane.dev/tasks/task-definition
-
-slug: demo_list_accounts
-name: List Accounts
-description: List all team accounts
-
-sql:
-  resource: "[Demo DB]"
-  entrypoint: list_accounts.sql
