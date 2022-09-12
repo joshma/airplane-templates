@@ -1,0 +1,20 @@
+# Full reference: https://docs.airplane.dev/tasks/task-definition
+
+slug: demo_update_account
+name: Update Account
+description: Update a team account
+
+parameters:
+  - slug: id
+    name: Account ID
+    type: integer
+  - slug: company_name
+    name: Name
+    type: shorttext
+
+sql:
+  resource: "[Demo DB]"
+  entrypoint: update_account.sql
+  queryArgs:
+    id: "{{params.id}}"
+    company_name: "{{params.company_name}}"
