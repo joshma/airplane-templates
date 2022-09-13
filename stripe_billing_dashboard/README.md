@@ -1,4 +1,4 @@
-# Template: Stripe Billing Dashboard
+# Template: Stripe billing dashboard
 
 ## Next steps
 
