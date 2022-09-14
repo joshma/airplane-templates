@@ -15,15 +15,6 @@ import { useEffect } from "react";
 // Replace with your Intercom App ID, which can be found from the URL of an Intercom conversation
 const INTERCOM_APP_ID = "";
 
-const openConversationsCols = [
-  { label: "Title", accessor: "title" },
-  { label: "Waiting since", accessor: "waitingSince" },
-  { label: "Admin assignee", accessor: "adminAssignee" },
-  { label: "Team assignee", accessor: "teamAssignee" },
-  { label: "Contact name", accessor: "contactName" },
-  { label: "Contact email", accessor: "contactEmail" },
-];
-
 // Views documentation: https://docs.airplane.dev/views/getting-started
 const TicketingDashboard = () => {
   const openConversationsState = useComponentState("openConversations");
@@ -145,5 +136,14 @@ Open in Intercom: ${openInIntercomLink(selectedConvo.id)}
     </Stack>
   );
 };
+
+const openConversationsCols = [
+  { label: "Title", accessor: "title" },
+  { label: "Waiting since", accessor: "waitingSince" },
+  { label: "Admin assignee", accessor: "adminAssignee" },
+  { label: "Team assignee", accessor: "teamAssignee" },
+  { label: "Contact name", accessor: "contactName" },
+  { label: "Contact email", accessor: "contactEmail" },
+];
 
 export default TicketingDashboard;

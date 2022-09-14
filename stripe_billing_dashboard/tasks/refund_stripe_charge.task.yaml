@@ -2,7 +2,7 @@
 
 # Used by Airplane to identify your task. Do not change.
 slug: demo_refund_stripe_charge
-name: Refund Stripe Charge
+name: Refund Stripe charge
 description: "Refunds a charge in Stripe."
 parameters:
   - slug: charge_id

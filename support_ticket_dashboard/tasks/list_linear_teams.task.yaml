@@ -1,7 +1,7 @@
 # Full reference: https://docs.airplane.dev/tasks/task-definition
 
 slug: demo_list_linear_teams
-name: List linear teams
+name: List Linear teams
 
 node:
   entrypoint: list_linear_teams.ts
