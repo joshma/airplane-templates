@@ -20,7 +20,7 @@ schedules:
     name: Daily database check
     description: Runs a database check every day at midnight UTC
     # paramValues:
-    # slack_channel: INSERT_SLACK_CHANNEL_HERE
+      # slack_channel: INSERT_SLACK_CHANNEL_HERE
 
 resources:
   db: demo_db
