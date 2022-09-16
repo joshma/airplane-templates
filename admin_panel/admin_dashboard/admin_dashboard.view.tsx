@@ -16,7 +16,7 @@ const Dashboard = () => {
   const selectedCustomer = customersTable.selectedRow;
 
   return (
-    <Stack sx={{ maxWidth: "1420px" }}>
+    <Stack sx={{ maxWidth: "1680px" }}>
       <Title>Admin panel</Title>
       <Text>
         Look up a customer, edit customer details, view orders for that
@@ -81,7 +81,7 @@ const CustomerCard = ({ selectedCustomer, searchKeyword }) => {
   const contactName = useComponentState("contactNameInput");
 
   return (
-    <Card sx={{ maxWidth: "350px" }}>
+    <Card sx={{ maxWidth: "480px" }}>
       <Title order={3}>{selectedCustomer.company_name}</Title>
       <Text>
         {selectedCustomer.address}
@@ -92,7 +92,7 @@ const CustomerCard = ({ selectedCustomer, searchKeyword }) => {
       <Stack>
         <Divider />
         <Title order={5}>Update point of contact</Title>
-        <Stack direction="row">
+        <Stack direction="row" grow>
           <TextInput
             id="contactNameInput"
             placeholder="Contact name"
