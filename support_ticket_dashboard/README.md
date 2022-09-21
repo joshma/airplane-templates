@@ -4,7 +4,7 @@
 
 - Navigate to the support_ticket_dashboard directory: `cd support_ticket_dashboard`
 - Deploy tasks: `airplane deploy tasks --yes`
-- Develop your template locally: `airplane dev --editor`
+- Develop your template locally: `airplane dev --editor --env ''`
 - To use your own Intercom auth token and Linear API key:
   - Intercom:
     - Get your Intercom auth token by following this guide: https://developers.intercom.com/building-apps/docs/authentication-types
