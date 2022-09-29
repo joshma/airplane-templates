@@ -9,3 +9,6 @@ vendor
 yarn.lock
 package-lock.json
 .airplane-view
+
+# Editors
+.idea/
